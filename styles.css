@@ -1,0 +1,228 @@
+:root {
+   --color-accent: #2b7fff;
+   --color-main: #011c44;
+   --color-secondary-lightest: #ffffff;
+   --color-secondary-dark: #4a4a4a;
+   --color-secondary-light: #747272;
+   --color-secondary-darkest: #000000;
+}
+
+@font-face {
+   font-family: Play;
+   src: url('./fonts/Play-Regular.ttf');
+}
+@font-face {
+   font-family: Play;
+   src: url('./fonts/Play-Bold.ttf');
+   font-weight: bold;
+}
+@font-face {
+   font-family: Roboto;
+   font-weight: 700;
+   src: url('./fonts/Roboto-Bold.ttf');
+}
+@font-face {
+   font-family: Roboto;
+   font-weight: 400;
+   src: url('./fonts/Roboto-Regular.ttf');
+}
+
+*,
+*::after,
+*::before {
+   margin-top: 0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: Roboto;
+   color: var(--color-main);
+}
+.section-title {
+   font-family: Play;
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 1.15;
+   text-align: center;
+}
+.section-title .accent {
+   color: var(--color-accent);
+}
+.header {
+   background-color: rgba(255, 255, 255, 0.25);
+}
+.header__logo {
+   font-family: Play;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 1;
+   text-decoration: none;
+   color: var(--color-accent);
+}
+.header__menu {
+   list-style-type: none;
+}
+.header__nav-link {
+   font-size: 18px;
+   line-height: 1.16;
+   text-decoration: none;
+   color: var(--color-main);
+}
+.header__menu-item.active .header__nav-link {
+   color: var(--color-accent);
+}
+.header__button {
+   background-color: transparent;
+   border: none;
+}
+.header__icon {
+   fill: var(--color-main);
+}
+.hero__title {
+   font-family: Play;
+   font-size: 140px;
+   font-weight: 700;
+   line-height: 0.8;
+   color: var(--color-accent);
+}
+.hero__subheading {
+   font-size: 18px;
+   line-height: 1.16;
+   font-weight: 400;
+}
+.hero__button {
+   background-color: var(--color-accent);
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.16;
+   color: var(--color-secondary-lightest);
+}
+.hero__text {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 18px;
+   text-align: center;
+   color: var(--color-secondary-dark);
+}
+.quality__title .accent {
+   color: var(--color-accent);
+}
+.quality__text {
+   font-size: 22px;
+   line-height: 1.7;
+}
+
+.choise__item {
+   background-color: var(--color-secondary-lightest);
+}
+.choise__title {
+   text-align: center;
+}
+.choise__icon {
+   fill: var(--color-accent);
+}
+.choise__text {
+   font-size: 18px;
+   line-height: 1.333;
+   text-align: center;
+   color: var(--color-secondary-darkest);
+}
+
+.procedures__name {
+   font-size: 22px;
+   line-height: 1.18;
+   text-align: center;
+   color: var(--color-secondary-lightest);
+}
+.procedures__slider-button {
+   padding: 0;
+   width: 44px;
+   height: 44px;
+   background-color: transparent;
+   border-radius: 50%;
+}
+.procedures__icon {
+   fill: var(--color-main);
+}
+.procedures__slider-dot {
+   width: 11px;
+   height: 11px;
+   background-color: var(--color-secondary-light);
+   border-radius: 50%;
+}
+
+.procedures__slider-dot.active {
+   background-color: var(--color-accent);
+}
+
+.contact__form-wrap {
+   background-color: var(--color-main);
+}
+.contact__form-title {
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.17;
+   text-align: center;
+   color: var(--color-secondary-lightest);
+}
+.contact__form-title .accent {
+   color: var(--color-accent);
+}
+.contact__form-input {
+   font-family: Roboto;
+   font-size: 13px;
+   line-height: 1.17;
+}
+.contact__form-submit {
+   font-family: Roboto;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.16;
+   background-color: var(--color-accent);
+   color: var(--color-secondary-lightest);
+}
+.contact__form-text,
+.contact__form-link {
+   font-size: 12px;
+   line-height: 1.5;
+   text-align: center;
+   color: var(--color-secondary-light);
+}
+.contact__form-text {
+   margin-bottom: 0;
+}
+.footer {
+   background-color: var(--color-main);
+   color: var(--color-secondary-lightest);
+}
+.footer a {
+   text-decoration: none;
+}
+.footer__logo {
+   font-family: Play;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 0.875;
+   text-transform: capitalize;
+   text-decoration: none;
+   color: var(--color-accent);
+}
+
+.footer__link {
+   font-size: 16px;
+   line-height: 1.17;
+   color: var(--color-secondary-lightest);
+}
+.footer__address {
+   font-style: normal;
+}
+.footer__icon {
+   fill: var(--color-secondary-lightest);
+}
+.footer__address-copyright {
+   margin-bottom: 0;
+   font-size: 13px;
+   line-height: 1.17;
+   color: var(--color-secondary-light);
+}
